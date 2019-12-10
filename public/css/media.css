@@ -1,0 +1,29 @@
+@media (max-width: 1100px) {
+    .content {
+        padding-left: 215px !important;
+    }
+}
+@media (max-width: 768px) {
+    .col-md-2 {
+        display: none;
+    }
+    .content {
+        margin-left: 0 !important;
+        min-height: calc(100vh - 73px);
+    }
+    .mr-5 {
+        margin-right: 0 !important;
+    }
+    .add-content {
+        margin-right: 15px;
+    }
+    .content {
+        padding-left: 15px !important;
+    }
+}
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 90vw;
+        margin: 1.75rem auto;
+    }
+}

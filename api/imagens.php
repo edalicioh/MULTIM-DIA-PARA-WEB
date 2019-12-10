@@ -1,16 +1,11 @@
 <?php
 header('Content-Type: application/json');
 
-require_once  __DIR__ . '/model/ImagemDAO.php';
+require_once  __DIR__ . '/Dao/Imagem.php';
 
-if (isset($_GET['gal'])){
+if (isset($_GET['gal'])) {
     $galeria_id = $_GET['gal'];
-
-    $dao = new ImagemDAO();
-    $imagens = $dao->listaImagensPorGaleria($galeria_id);
-    echo json_encode($imagens);
-}else{
+    echo (new Imagem())->listaImagensPorGaleria($galeria_id);
+} else {
     echo json_encode(array('erro' => 'Id de Galeria não informado'));
 }
-
-

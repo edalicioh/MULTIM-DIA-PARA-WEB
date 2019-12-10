@@ -1,8 +1,9 @@
 <?php
 header('Content-Type: application/json');
 
-require_once  __DIR__ . '/model/GaleriaDAO.php';
+require_once  __DIR__ . '/Dao/Galeria.php';
 
-$dao = new GaleriaDAO();
-$galerias = $dao->listaGalerias();
-echo json_encode($galerias);
+$galeria = (new Galeria())->listaGalerias();
+
+print($galeria);
+

@@ -1,0 +1,49 @@
+
+.col-md-2 {
+    position: fixed;
+    min-width: 200px;
+    height: calc(100vh - 56px);
+    background-image: linear-gradient(to bottom, #04b157, #96cb48);
+    padding-right: 0;
+    padding-left: 0;
+    z-index: 10;
+}
+li.list-group-item {
+    cursor: pointer;
+    background: rgba(4, 177, 87, .6);
+    box-shadow: inset 0px 3px 5px gold;
+}
+li.list-group-item:hover {
+    background: #96cb48;
+}
+button.btn.btn-primary.btn-add {
+    bottom: 0%;
+    width: 90%;
+    margin: 5%;
+    position: absolute;
+    background: rgba(4, 177, 87, 0.2);
+    border-color: rgba(4, 177, 87, 1);
+    text-transform: uppercase;
+}
+button.btn.btn-primary.btn-add:hover {
+    background: rgba(4, 177, 87, 1);
+    border-color: #fff;
+}
+.add-imgs {
+    padding: 2rem;
+}
+.list-group-item.active {
+    z-index: 2;
+    color: #fff;
+    box-shadow: 2px 0px 2px black;
+    background: rgb(9, 58, 32);
+    border-color: rgb(9, 58, 32);
+}
+.list-group-item:first-child {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.list-group-item:last-child {
+    border-bottom-right-radius: 0; 
+    border-bottom-left-radius: 0; 
+}

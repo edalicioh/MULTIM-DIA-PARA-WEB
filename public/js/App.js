@@ -4,6 +4,7 @@ import Galeria from './componets/Galeria.js'
 import Albums from './componets/MenuAlbums.js'
 import Modal from './componets/Modal.js'
 import Add from './componets/AddImgs.js'
+import Load from './componets/Load.js'
 
 new Vue({
   el: '#app',
@@ -15,8 +16,10 @@ new Vue({
       showModal: false,
       active: '',
       nomegale: '',
+      desgale: '',
       open: '',
       isAdd: true,
+      isLoad: true,
     }
   },
   methods: {
@@ -28,28 +31,26 @@ new Vue({
           console.log(response.data);
           self.active = id.id
           self.nomegale = id.nome
+          self.desgale = id.descricao
           self.isAdd = false
           self.images = response.data
         })
         .catch(function (error) {
-          // handle error
           console.log(error);
         })
         .finally(function () {
-          // always executed
+            
         });
     },
     getAlbums() {
       const self = this
       axios.get('api/galerias.php')
         .then(function ({ data }) {
-          // handle success
-          console.log(data);
           self.albums = data
+          console.log( data );
         })
         .catch(function (error) {
-          // handle error
-          console.log(error);
+            self.albums = false
         })
     },
     openModal(index) {
@@ -63,11 +64,19 @@ new Vue({
     addImg() {
       this.isAdd = true
       this.nomegale = false
+      this.active = ''
     },
+    reload(e){
+        this.albums = e    
+    } 
   },
   created() {
     this.getAlbums()
+    setTimeout(() => {
+        this.isLoad = false
+    }, 2000);
   },
+
 })
 
 

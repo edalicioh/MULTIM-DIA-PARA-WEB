@@ -1,0 +1,26 @@
+.box-load{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(45deg , #04b157, #96cb48);
+}
+.box-load svg{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    animation: load_rotate 2s linear infinite;
+}
+.box-load svg circle {
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke-width: 10;
+    stroke: #FFF200 ;
+    stroke-linecap:round;
+    transform: translate(5px , 5px);
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+    animation: load 4s linear infinite;
+
+}

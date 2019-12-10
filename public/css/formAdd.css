@@ -1,0 +1,82 @@
+
+.add-content {
+    flex-wrap: wrap;
+}
+
+button.btn.btn-primary.btn-form-add {
+    position: fixed;
+    margin-right: calc(3rem + 15px);
+    right: 0;
+    bottom: 0;
+    color: #000000;
+    background: rgba(4, 177, 87, 0.2);
+    border-color: rgba(4, 177, 87, 1);
+}
+button.btn.btn-primary.btn-form-add:hover {
+    background: rgba(4, 177, 87, 1);
+    border-color: #fff;
+}
+
+.add-form {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+label.label-file {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: dashed;
+    width: 80%;
+    height: 14rem;
+    background-color: rgba(4, 177, 87, 1);
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+label.label-file:hover {
+    border: dashed #04b157;
+    background: rgba(4, 177, 87, 0.2);
+    color: #04b157;
+}
+label.label-file.active {
+    border: dashed #04b157;
+    background: rgba(4, 177, 87, 0.2);
+    color: #04b157;
+}
+
+label i.material-icons {
+    font-size: 6rem;
+}
+
+i.material-icons.delete {
+    position: absolute;
+    font-size: 3rem;
+    color: red;
+    opacity: 0;
+}
+
+.pre-view {
+    display: flex;
+    flex-wrap: wrap;
+}
+.pre-view-box {
+    width: 45%;
+    margin: 2.5%;
+    padding: 3px;
+    box-shadow: 0px 0px 3px #04b157, 0 0 3px #04b157;
+}
+.view-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.view-img:hover img {
+    opacity: 0.3;
+    filter: blur(1px);
+}
+.view-img:hover i {
+    opacity: 1;
+}

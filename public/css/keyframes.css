@@ -1,0 +1,21 @@
+
+@keyframes fadeIn {
+    0% , 100% {
+        top: 0;
+    }
+    25% , 75% {
+        top: 62px;
+        right: 15px;
+    }
+}
+
+@keyframes load {
+    0% ,100%{stroke-dashoffset: 440;}
+    50%{stroke-dashoffset: 0;}
+    51%{stroke-dashoffset: 880;}
+}
+@keyframes load_rotate {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+    
+}

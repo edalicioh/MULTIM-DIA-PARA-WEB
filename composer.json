@@ -1,0 +1,16 @@
+{
+    "name": "tads/galeria",
+    "authors": [{
+        "name": "hazen",
+        "email": "hazen@hazen.com"
+    }],
+    "autoload": {
+        "psr-4": {
+            "App\\": "api/app/",
+            "Core\\": "api/core/"
+        }
+    },
+    "require": {
+        "php": ">=7"
+    }
+}

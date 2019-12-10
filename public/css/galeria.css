@@ -1,0 +1,35 @@
+
+.content-galeria {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.img-card {
+    min-width: 25%;
+}
+.img-thumbnail {
+    width: 100%;
+    padding: 0.05rem;
+    border: 1px solid #fff;
+    border-radius: 0.75rem;
+    opacity: 1;
+}
+
+.cont-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+    cursor: pointer;
+}
+p {
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+}
+.cont-img:hover img {
+    opacity: 0.3;
+}
+.cont-img:hover p {
+    opacity: 1;
+}
